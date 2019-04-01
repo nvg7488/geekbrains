@@ -28,8 +28,13 @@ public class HomeWork1 {
         return (max(a, b) > max(c, d)) ? max(a, b) : max(c, d);
     }
     /**
-     * Написать программу обмена значениями двух целочисленных переменных с использованием третьей переменной.
-     * @param array
-     * @return array
+     * Найти максимальное из 3-х чисел.
+     * @param a
+     * @param b
+     * @param c
+     * @return max3
      */
+    public int task12(int a, int b, int c) {
+        return (max(a, b) > c) ? max(a, b) : c;
+    }
 }
