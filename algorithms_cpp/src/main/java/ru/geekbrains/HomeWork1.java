@@ -16,6 +16,7 @@ public class HomeWork1 {
     public float task01(int m, float h) {
         return m / (h * h);
     }
+    
     /**
      * Найти максимальное из 4-х чисел.
      * @param a
@@ -27,6 +28,20 @@ public class HomeWork1 {
     public int task02(int a, int b, int c, int d) {
         return (max(a, b) > max(c, d)) ? max(a, b) : max(c, d);
     }
+
+    /**
+     * Написать программу обмена значениями двух целочисленных переменных с использованием третьей переменной.
+     * @param array
+     * @return array
+     */
+    public int[] task03a(int[] array) {
+        int tmp;
+        tmp = array[0];
+        array[0] = array[1];
+        array[1] = tmp;
+        return array;
+    }
+
     /**
      * Найти максимальное из 3-х чисел.
      * @param a

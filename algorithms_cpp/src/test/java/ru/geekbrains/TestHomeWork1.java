@@ -20,6 +20,14 @@ public class TestHomeWork1 {
     }
 
     @Test
+    public void task03Test() {
+        HomeWork1 homework = new HomeWork1();
+        int[] array = new int[] {6, 9};
+        int[] result = new int[] {9, 6};
+        assertThat(homework.task03a(array), is(result));
+    }
+
+    @Test
     public void task12Test() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task12(1, 2, 3), is(3));
