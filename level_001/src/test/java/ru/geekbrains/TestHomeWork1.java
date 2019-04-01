@@ -19,4 +19,12 @@ public class TestHomeWork1 {
         assertThat(homework.task3(7, 8), is(true));
         assertThat(homework.task3(10, 11), is(false));
     }
+
+    @Test
+    public void test5() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task5(-1), is(true));
+        assertThat(homework.task5(0), is(false));
+        assertThat(homework.task5(1), is(false));
+    }
 }

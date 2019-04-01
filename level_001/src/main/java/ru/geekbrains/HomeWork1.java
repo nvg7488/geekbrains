@@ -13,6 +13,7 @@ public class HomeWork1 {
         System.out.println(" 1: Переменные всех пройденных типов данных.");
         System.out.println(" 2: return a * (b + (c / d));");
         System.out.println(" 3: Сумма чисел в диапазоне.");
+        System.out.println(" 5: Отрицательное число.");
         System.out.print(" 0: выход из программы:");
         return sc.nextInt();
     }
@@ -57,6 +58,20 @@ public class HomeWork1 {
             result = true;
         } else {
             result = false;
+        }
+        return result;
+    }
+
+    /**
+     * Написать метод, которому в качестве параметра передается целое число,
+     * метод должен вернуть true, если число отрицательное.
+     * @param number
+     * @return boolean
+     */
+    public boolean task5(int number) {
+        boolean result = false;
+        if (number < 0) {
+            result = true;
         }
         return result;
     }
