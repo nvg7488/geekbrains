@@ -100,4 +100,26 @@ public class HomeWork1 {
     public String task6(String name) {
         return "Привет, " + name + "!";
     }
+
+    /**
+     * Написать метод, который определяет является ли год високосным, и выводит сообщение в консоль.
+     * Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
+     * @param year
+     * @return boolean
+     */
+    public boolean task7(int year) {
+        boolean result = false;
+        float f = year / 400;
+        int i = (int) f;
+        if (i == f) {
+            result = true;
+        } else {
+            f = year / 4;
+            i = (int) f;
+            if (i == f) {
+                result = true;
+            }
+        }
+        return result;
+    }
 }

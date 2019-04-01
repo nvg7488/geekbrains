@@ -41,4 +41,10 @@ public class TestHomeWork1 {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task6("Николай"), is("Привет, Николай!"));
     }
+
+    @Test
+    public void test7() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task7(1980), is(true));
+    }
 }
