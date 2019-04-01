@@ -35,4 +35,10 @@ public class TestHomeWork1 {
         assertThat(homework.task5(0), is(false));
         assertThat(homework.task5(1), is(false));
     }
+
+    @Test
+    public void test6() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task6("Николай"), is("Привет, Николай!"));
+    }
 }

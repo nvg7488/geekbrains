@@ -90,4 +90,14 @@ public class HomeWork1 {
         }
         return result;
     }
+
+    /**
+     * Написать метод, которому в качестве параметра передается строка, обозначающая имя,
+     * метод должен вывести в консоль сообщение «Привет, указанное_имя!».
+     * @param name
+     * @return String
+     */
+    public String task6(String name) {
+        return "Привет, " + name + "!";
+    }
 }
