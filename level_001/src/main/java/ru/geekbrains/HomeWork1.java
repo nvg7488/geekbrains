@@ -12,6 +12,7 @@ public class HomeWork1 {
         Scanner sc = new Scanner(System.in);
         System.out.println(" 1: Переменные всех пройденных типов данных.");
         System.out.println(" 2: return a * (b + (c / d));");
+        System.out.println(" 3: Сумма чисел в диапазоне.");
         System.out.print(" 0: выход из программы:");
         return sc.nextInt();
     }
@@ -39,5 +40,24 @@ public class HomeWork1 {
      */
     public int task2(int a, int b, int c, int d) {
         return (a * (b + c / d));
+    }
+
+    /**
+     * Написать метод, принимающий на вход два числа,
+     * и проверяющий что их сумма лежит в пределах от 10 до 20(включительно),
+     * если да – вернуть true, в противном случае – false.
+     * @param x
+     * @param y
+     * @return boolean
+     */
+    public boolean task3(int x, int y) {
+        boolean result;
+        int z = x + y;
+        if ((z >= 10) && (z < 21)) {
+            result = true;
+        } else {
+            result = false;
+        }
+        return result;
     }
 }

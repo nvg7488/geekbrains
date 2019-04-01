@@ -11,4 +11,12 @@ public class TestHomeWork1 {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task2(4, 16, 2, 1), is(72));
     }
+
+    @Test
+    public void test3() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task3(3, 6), is(false));
+        assertThat(homework.task3(7, 8), is(true));
+        assertThat(homework.task3(10, 11), is(false));
+    }
 }
