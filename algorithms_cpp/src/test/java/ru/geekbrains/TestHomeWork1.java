@@ -28,6 +28,11 @@ public class TestHomeWork1 {
     }
 
     @Test
+    public void test04Test() {
+        HomeWork1 homework = new HomeWork1();
+    }
+
+    @Test
     public void task12Test() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task12(1, 2, 3), is(3));

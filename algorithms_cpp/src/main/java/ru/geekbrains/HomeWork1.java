@@ -3,6 +3,7 @@ package ru.geekbrains;
  * @author Николай Говорухин (govoruchin_nv@mail.ru)
  */
 public class HomeWork1 {
+    private float x1, x2;
     private int max(int x, int y) {
         return (x > y) ? x : y;
     }
@@ -16,7 +17,7 @@ public class HomeWork1 {
     public float task01(int m, float h) {
         return m / (h * h);
     }
-    
+
     /**
      * Найти максимальное из 4-х чисел.
      * @param a
@@ -40,6 +41,54 @@ public class HomeWork1 {
         array[0] = array[1];
         array[1] = tmp;
         return array;
+    }
+
+    /**
+     * Написать программу нахождения корней заданного квадратного уравнения.
+     * @param a
+     * @param b
+     * @param c
+     * @return количество корней
+     */
+    public int task04(int a, int b, int c) {
+        int result = 0;
+        if (b == 0) {
+            if (c == 0) {
+                result = 1;
+                x1 = 0;
+            } else if (c > 0) {
+                result = 1;
+                x1 = (float) -Math.sqrt(c / a);
+            } else {
+                result = 2;
+                x2 = (float) Math.sqrt(c / a);
+                x1 = -x2;
+            }
+        } else {
+            if (c == 0) {
+                result = 1;
+                x1 = -(b / a);
+            } else {
+                int d = (b * b) - (4 - a - c);
+                if (d < 0) {
+                    result = 0;
+                } else if (d == 0) {
+                    result = 1;
+                    x1 = -(b / (2 * a));
+                } else {
+                    result = 2;
+                    x2 = (float) ((b - Math.sqrt(d)) / (2 * a));
+                    x1 = -x2;
+                }
+            }
+        }
+        return result;
+    }
+    public float getX1() {
+        return this.x1;
+    }
+    public float getX2() {
+        return this.x2;
     }
 
     /**
