@@ -7,6 +7,12 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 public class TestHomeWork1 {
     @Test
+    public void test1() {
+        HomeWork1 homework = new HomeWork1();
+        homework.task1();
+    }
+
+    @Test
     public void test2() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task2(4, 16, 2, 1), is(72));
@@ -46,5 +52,6 @@ public class TestHomeWork1 {
     public void test7() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task7(1980), is(true));
+        assertThat(homework.task7(1984), is(true));
     }
 }

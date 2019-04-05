@@ -8,16 +8,6 @@ public class HomeWork1 {
     private char ch;
     private String str;
 
-    private int menu() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println(" 1: Переменные всех пройденных типов данных.");
-        System.out.println(" 2: return a * (b + (c / d));");
-        System.out.println(" 3: Сумма чисел в диапазоне.");
-        System.out.println(" 5: Отрицательное число.");
-        System.out.print(" 0: выход из программы:");
-        return sc.nextInt();
-    }
-
     /**
      * Создать переменные всех пройденных типов данных и инициализировать их значения.
      */
