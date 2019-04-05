@@ -92,6 +92,25 @@ public class HomeWork1 {
     }
 
     /**
+     * Ввести возраст человека и определить, какое слово последует: "год", "года", "лет".
+     * @param year возраст
+     * @return result
+     */
+    public String task06(int year) {
+        String result;
+        if ((year % 10) == 0) {
+            result = "лет";
+        } else if ((year % 10) == 1) {
+            result = "год";
+        } else if ((year % 10) < 5) {
+            result = "года";
+        } else {
+            result = "лет";
+        }
+        return result;
+    }
+
+    /**
      * Найти максимальное из 3-х чисел.
      * @param a
      * @param b

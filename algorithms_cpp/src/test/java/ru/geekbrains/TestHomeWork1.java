@@ -60,6 +60,15 @@ public class TestHomeWork1 {
     }
 
     @Test
+    public void test06Test() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task06(1), is("год"));
+        assertThat(homework.task06(2), is("года"));
+        assertThat(homework.task06(5), is("лет"));
+        assertThat(homework.task06(10), is("лет"));
+    }
+
+    @Test
     public void task12Test() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task12(1, 2, 3), is(3));
