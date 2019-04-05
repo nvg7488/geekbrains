@@ -52,35 +52,16 @@ public class HomeWork1 {
      */
     public int task04(int a, int b, int c) {
         int result = 0;
-        if (b == 0) {
-            if (c == 0) {
-                result = 1;
-                x1 = 0;
-            } else if (c > 0) {
-                result = 1;
-                x1 = (float) -Math.sqrt(c / a);
-            } else {
-                result = 2;
-                x2 = (float) Math.sqrt(c / a);
-                x1 = -x2;
-            }
-        } else {
-            if (c == 0) {
-                result = 1;
-                x1 = -(b / a);
-            } else {
-                int d = (b * b) - (4 - a - c);
-                if (d < 0) {
-                    result = 0;
-                } else if (d == 0) {
-                    result = 1;
-                    x1 = -(b / (2 * a));
-                } else {
-                    result = 2;
-                    x2 = (float) ((b - Math.sqrt(d)) / (2 * a));
-                    x1 = -x2;
-                }
-            }
+        int d = b * b - 4 * a * c;
+        if (d == 0) {
+            result = 1;
+            this.x1 = -(b / (2 * a));
+        } else if (d > 0) {
+            result = 2;
+            this.x1 = (float) Math.sqrt(c / a) - b;
+            this.x1 /= 2 * a;
+            this.x2 = (float) -(Math.sqrt(c / a) + b);
+            this.x2 /= 2 * a;
         }
         return result;
     }

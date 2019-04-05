@@ -36,10 +36,10 @@ public class TestHomeWork1 {
         result = homework.task04(1, 0, 0);
         assertThat(result, is(1));
         assertThat(homework.getX1(), is(0F));
-        result = homework.task04(1, 2, 0);
-        assertThat(result, is(1));
-        assertThat(homework.getX1(), is(-2F));
-        assertThat(homework.getX2(), is(0F));
+        result = homework.task04(1, 3, 2);
+        assertThat(result, is(2));
+        assertThat(homework.getX1(), is(-0.79289323F));
+        assertThat(homework.getX2(), is(-2.2071068F));
     }
 
     @Test
