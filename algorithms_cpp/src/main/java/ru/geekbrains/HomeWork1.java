@@ -230,6 +230,10 @@ public class HomeWork1 {
         return (max(a, b) > c) ? max(a, b) : c;
     }
 
+    /**
+     * Генерация случайных число от 1 до 100 без использования стандартной функции rand().
+     * @return
+     */
     public int[] task13() {
         int[] result = new int[100];
         result[0] = 1;
