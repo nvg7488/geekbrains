@@ -4,6 +4,7 @@ package ru.geekbrains;
  */
 public class HomeWork1 {
     private float x1, x2;
+    private int dev;
     private int max(int x, int y) {
         return (x > y) ? x : y;
     }
@@ -142,6 +143,26 @@ public class HomeWork1 {
             result[1][index] = result[0][index] * step;
         }
         return result;
+    }
+
+    /**
+     * Используя только операции сложения и вычитания,
+     * найти частное от деления нацело N на M, а так же остаток от этого деления.
+     * @param n
+     * @param m
+     * @return int
+     */
+    public int task09(int n, int m) {
+        int result = 0;
+        while (n >= m) {
+            n -= m;
+            result++;
+        }
+        this.dev = n;
+        return result;
+    }
+    public int getDev() {
+        return this.dev;
     }
 
     /**

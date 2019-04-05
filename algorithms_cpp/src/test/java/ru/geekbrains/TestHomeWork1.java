@@ -85,6 +85,14 @@ public class TestHomeWork1 {
     }
 
     @Test
+    public void test09Test() {
+        HomeWork1 homework = new HomeWork1();
+        int result = homework.task09(9, 2);
+        assertThat(result, is(4));
+        assertThat(homework.getDev(), is(1));
+    }
+
+    @Test
     public void task12Test() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task12(1, 2, 3), is(3));
