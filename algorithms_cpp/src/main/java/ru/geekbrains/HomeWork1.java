@@ -130,6 +130,21 @@ public class HomeWork1 {
     }
 
     /**
+     * Ввести a и b и вывести квадраты и кубы чисел от a и b.
+     * @param a "от".
+     * @param b "до".
+     * @return целочисленный массив квадратов и кубов.
+     */
+    public int[][] task08(int a, int b) {
+        int[][] result = new int[2][b - a + 1];
+        for (int index = 0, step = a; step <= b; index++, step++) {
+            result[0][index] = step * step;
+            result[1][index] = result[0][index] * step;
+        }
+        return result;
+    }
+
+    /**
      * Найти максимальное из 3-х чисел.
      * @param a
      * @param b

@@ -78,6 +78,13 @@ public class TestHomeWork1 {
     }
 
     @Test
+    public void test08Test() {
+        HomeWork1 homework = new HomeWork1();
+        int[][] result = {{1, 4, 9}, {1, 8, 27}};
+        assertThat(homework.task08(1, 3), is(result));
+    }
+
+    @Test
     public void task12Test() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task12(1, 2, 3), is(3));
