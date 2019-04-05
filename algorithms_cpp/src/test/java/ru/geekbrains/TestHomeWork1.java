@@ -112,4 +112,10 @@ public class TestHomeWork1 {
         assertThat(homework.task12(4, 6, 2), is(6));
         assertThat(homework.task12(9, 3, 6), is(9));
     }
+
+    @Test
+    public void test13Test() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task13(), is(homework.random));
+    }
 }

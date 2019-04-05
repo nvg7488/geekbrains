@@ -2,10 +2,12 @@ package ru.geekbrains;
 /**
  * @author Николай Говорухин (govoruchin_nv@mail.ru)
  */
+import java.util.Arrays;
 import java.util.Random;
 public class HomeWork1 {
     private float x1, x2;
     private int dev;
+    public int[] random = new int[100];
     private static final Random RND = new Random();
     private int max(int x, int y) {
         return (x > y) ? x : y;
@@ -226,5 +228,15 @@ public class HomeWork1 {
      */
     public int task12(int a, int b, int c) {
         return (max(a, b) > c) ? max(a, b) : c;
+    }
+
+    public int[] task13() {
+        int[] result = new int[100];
+        result[0] = 1;
+        for (int index = 1; index < 100; index++) {
+            random[index] = (2 * random[index - 1] + 3) % 100;
+        }
+        random = Arrays.copyOf(result, result.length);
+        return result;
     }
 }
