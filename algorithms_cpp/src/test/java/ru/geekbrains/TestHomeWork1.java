@@ -69,6 +69,15 @@ public class TestHomeWork1 {
     }
 
     @Test
+    public void test07Test() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task07(0, 0, 1, 1), is(true));
+        assertThat(homework.task07(0, 1, 1, 0), is(true));
+        assertThat(homework.task07(0, 0, 0, 1), is(false));
+        assertThat(homework.task07(0, 0, 1, 0), is(false));
+    }
+
+    @Test
     public void task12Test() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task12(1, 2, 3), is(3));

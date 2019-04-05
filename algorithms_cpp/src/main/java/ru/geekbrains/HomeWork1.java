@@ -111,6 +111,25 @@ public class HomeWork1 {
     }
 
     /**
+     * Требуется определить, относятся ли поля к одному цвету.
+     * @param x0
+     * @param y0
+     * @param x1
+     * @param y1
+     * @return boolean
+     */
+    public boolean task07(int x0, int y0, int x1, int y1) {
+        boolean result = false;
+        XYcolor[] figure = new XYcolor[2];
+        figure[0] = new XYcolor(x0, y0);
+        figure[1] = new XYcolor(x1, y1);
+        if (figure[0].getColor() == figure[1].getColor()) {
+            result = true;
+        }
+        return result;
+    }
+
+    /**
      * Найти максимальное из 3-х чисел.
      * @param a
      * @param b
