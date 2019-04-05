@@ -73,6 +73,25 @@ public class HomeWork1 {
     }
 
     /**
+     * Передаётся номер месяца. Требуется определить, к какому времени года он относится.
+     * @param mm месяц
+     * @return season
+     */
+    public String task05(int mm) {
+        String season;
+        if ((mm < 3) || (mm == 12)) {
+            season = "Зима";
+        } else if (mm < 6) {
+            season = "Весна";
+        } else if (mm < 9) {
+            season = "Лето";
+        } else {
+            season = "Осень";
+        }
+        return season;
+    }
+
+    /**
      * Найти максимальное из 3-х чисел.
      * @param a
      * @param b

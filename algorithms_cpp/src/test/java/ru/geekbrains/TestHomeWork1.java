@@ -43,6 +43,23 @@ public class TestHomeWork1 {
     }
 
     @Test
+    public void test05Test() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task05(1), is("Зима"));
+        assertThat(homework.task05(2), is("Зима"));
+        assertThat(homework.task05(3), is("Весна"));
+        assertThat(homework.task05(4), is("Весна"));
+        assertThat(homework.task05(5), is("Весна"));
+        assertThat(homework.task05(6), is("Лето"));
+        assertThat(homework.task05(7), is("Лето"));
+        assertThat(homework.task05(8), is("Лето"));
+        assertThat(homework.task05(9), is("Осень"));
+        assertThat(homework.task05(10), is("Осень"));
+        assertThat(homework.task05(11), is("Осень"));
+        assertThat(homework.task05(12), is("Зима"));
+    }
+
+    @Test
     public void task12Test() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task12(1, 2, 3), is(3));
