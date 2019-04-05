@@ -118,4 +118,14 @@ public class TestHomeWork1 {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task13(), is(homework.random));
     }
+
+    @Test
+    public void test14Test() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.test14(4), is(false));
+        assertThat(homework.test14(5), is(true));
+        assertThat(homework.test14(6), is(true));
+        assertThat(homework.test14(7), is(false));
+        assertThat(homework.test14(10), is(false));
+    }
 }

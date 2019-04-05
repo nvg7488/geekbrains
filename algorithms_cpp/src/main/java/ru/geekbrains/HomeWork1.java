@@ -243,4 +243,23 @@ public class HomeWork1 {
         random = Arrays.copyOf(result, result.length);
         return result;
     }
+
+    /**
+     * Натуральное число называется автоморфным, если оно равно последним цифрам своего квадрата.
+     * Например, 5^2 = 25.
+     * @param num
+     * @return boolean
+     */
+    public boolean test14(int num) {
+        boolean result = false;
+        int automorph = num * num;
+        do {
+            automorph %= 10;
+            if (automorph == num) {
+                result = true;
+                break;
+            }
+        } while (automorph == num);
+        return result;
+    }
 }
