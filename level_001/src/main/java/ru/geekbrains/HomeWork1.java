@@ -98,16 +98,18 @@ public class HomeWork1 {
      * @return boolean
      */
     public boolean task7(int year) {
-        boolean result = false;
-        float f = year / 400;
-        int i = (int) f;
-        if (i == f) {
+        boolean result;
+        if (((float) year) / 400 == (float) (year / 400)) {
             result = true;
         } else {
-            f = year / 4;
-            i = (int) f;
-            if (i == f) {
-                result = true;
+            if (((float) year) / 100 == (float) (year / 100)) {
+                result = false;
+            } else {
+                if (((float) year) / 4 == (float) (year / 4)) {
+                    result = true;
+                } else {
+                    result = false;
+                }
             }
         }
         return result;

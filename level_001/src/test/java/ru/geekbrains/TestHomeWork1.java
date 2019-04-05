@@ -51,7 +51,12 @@ public class TestHomeWork1 {
     @Test
     public void test7() {
         HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task7(1900), is(false));
         assertThat(homework.task7(1980), is(true));
         assertThat(homework.task7(1984), is(true));
+        assertThat(homework.task7(1990), is(false));
+        assertThat(homework.task7(2000), is(true));
+        assertThat(homework.task7(2016), is(true));
+        assertThat(homework.task7(2100), is(false));
     }
 }
