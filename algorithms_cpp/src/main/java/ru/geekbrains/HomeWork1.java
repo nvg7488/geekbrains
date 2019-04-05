@@ -2,9 +2,11 @@ package ru.geekbrains;
 /**
  * @author Николай Говорухин (govoruchin_nv@mail.ru)
  */
+import java.util.Random;
 public class HomeWork1 {
     private float x1, x2;
     private int dev;
+    private static final Random RND = new Random();
     private int max(int x, int y) {
         return (x > y) ? x : y;
     }
@@ -183,6 +185,35 @@ public class HomeWork1 {
                 result = true;
             }
         } while (num > 0);
+        return result;
+    }
+
+    /**
+     * Подсчитать среднее арифметическое всех положительных чисел, оканчивающихся на "8".
+     * @return int
+     */
+    public int task11() {
+        int result = 0;
+        int num;        //  random
+        int dev;        //  остаток == 8
+        int kol = 0;    //  iterator
+        do {
+            num = RND.nextInt();
+            dev = num;
+            do {
+                dev %= 10;
+            } while (dev > 10);
+            if (dev == 8) {
+                result += num;
+                kol++;
+            }
+        } while (num > 0);
+        if (kol > 0) {
+            result /= kol;
+            this.dev = result;
+        } else {
+            result = 0;
+        }
         return result;
     }
 
