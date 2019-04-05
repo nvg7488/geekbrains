@@ -29,7 +29,17 @@ public class TestHomeWork1 {
 
     @Test
     public void test04Test() {
+        int result;
         HomeWork1 homework = new HomeWork1();
+        result = homework.task04(1, 1, 1);
+        assertThat(result, is(0));
+        result = homework.task04(1, 0, 0);
+        assertThat(result, is(1));
+        assertThat(homework.getX1(), is(0F));
+        result = homework.task04(1, 2, 0);
+        assertThat(result, is(1));
+        assertThat(homework.getX1(), is(-2F));
+        assertThat(homework.getX2(), is(0F));
     }
 
     @Test
