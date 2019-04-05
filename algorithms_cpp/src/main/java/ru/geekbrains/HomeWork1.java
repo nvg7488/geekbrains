@@ -192,14 +192,15 @@ public class HomeWork1 {
 
     /**
      * Подсчитать среднее арифметическое всех положительных чисел, оканчивающихся на "8".
+     * @param max
      * @return int
      */
-    public int task11() {
+    public int task11(int max) {
         int result = 0;
         int num;        //  random
         int dev;        //  остаток == 8
         int kol = 0;    //  iterator
-        do {
+        for (int step = 0; step < max; step++) {
             num = RND.nextInt();
             dev = num;
             do {
@@ -209,7 +210,7 @@ public class HomeWork1 {
                 result += num;
                 kol++;
             }
-        } while (num > 0);
+        }
         if (kol > 0) {
             result /= kol;
             this.dev = result;

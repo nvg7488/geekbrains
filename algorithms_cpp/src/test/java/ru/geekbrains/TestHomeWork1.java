@@ -102,7 +102,7 @@ public class TestHomeWork1 {
     @Test
     public void test11Test() {
         HomeWork1 homework = new HomeWork1();
-        assertThat(homework.task11(), is(homework.getDev()));
+        assertThat(homework.task11(100), is(homework.getDev()));
     }
 
     @Test
