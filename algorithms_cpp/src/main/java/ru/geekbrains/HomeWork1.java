@@ -166,6 +166,27 @@ public class HomeWork1 {
     }
 
     /**
+     * С помощью операции деления нацело и взятия остатка от деления определить,
+     * имеются ли в записи числа N нечётные цифры.
+     * @param num
+     * @return
+     */
+    public boolean task10(int num) {
+        boolean result = false;
+        int n;
+        do {
+            n = num % 10;
+            num -= n;
+            num /= 10;
+            n %= 2;
+            if (n > 0) {
+                result = true;
+            }
+        } while (num > 0);
+        return result;
+    }
+
+    /**
      * Найти максимальное из 3-х чисел.
      * @param a
      * @param b

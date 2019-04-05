@@ -93,6 +93,13 @@ public class TestHomeWork1 {
     }
 
     @Test
+    public void test10Test() {
+        HomeWork1 homework = new HomeWork1();
+        assertThat(homework.task10(456), is(true));
+        assertThat(homework.task10(468), is(false));
+    }
+
+    @Test
     public void task12Test() {
         HomeWork1 homework = new HomeWork1();
         assertThat(homework.task12(1, 2, 3), is(3));
