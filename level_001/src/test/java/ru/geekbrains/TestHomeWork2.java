@@ -39,4 +39,14 @@ public class TestHomeWork2 {
         int[] res = {0, 16};
         assertThat(homework.task5(arr), is(res));
     }
+    @Test
+    public void test6() {
+        HomeWork2 homework = new HomeWork2();
+        int[] array1 = {2, 2, 2, 1, 2, 2, 10, 1};
+        assertThat(homework.task6(array1), is(true));
+        int[] array2 = {1, 1, 3, 1, 3, 2, 3};
+        assertThat(homework.task6(array2), is(false));
+        int[] array3 = {1, 1, 3, 1, 4, 2};
+        assertThat(homework.task6(array3), is(true));
+    }
 }

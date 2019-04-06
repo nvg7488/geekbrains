@@ -88,4 +88,30 @@ public class HomeWork2 {
         }
         return result;
     }
+
+    /**
+     * В метод передаётся одномерный массив.
+     * Метод должен вернуть true, если в массиве есть место, в котором сумма элементов левой и правой части равны.
+     * @param array
+     * @return
+     */
+    public boolean task6(int[] array) {
+        boolean result = false;
+        int sl, sr, step = 0;
+        do {
+            step++;
+            sl = 0;
+            sr = 0;
+            for (int index = 0; index < step; index++) {
+                sl += array[index];
+            }
+            for (int index = step; index < array.length; index++) {
+                sr += array[index];
+            }
+            if (sl == sr) {
+                result = true;
+            }
+        } while ((step < array.length) && !result);
+        return result;
+    }
 }
