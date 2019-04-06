@@ -33,4 +33,19 @@ public class HomeWork2 {
         }
         return result;
     }
+
+    /**
+     * Задать массив {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1}, пройти по нему циклом:
+     * и числа, меньшие 6, удвоить.
+     * @param array
+     * @return array
+     */
+    public int[] task3(int[] array) {
+        for (int index = 0; index < array.length; index++) {
+            if (array[index] < 6) {
+                array[index] *= 2;
+            }
+        }
+        return array;
+    }
 }

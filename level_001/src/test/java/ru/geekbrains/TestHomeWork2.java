@@ -19,4 +19,11 @@ public class TestHomeWork2 {
         int[] result = {0, 3, 6, 9, 12, 15, 18, 21};
         assertThat(homework.task2(8), is(result));
     }
+    @Test
+    public void test3() {
+        HomeWork2 homework = new HomeWork2();
+        int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        int[] res = {2, 10, 6, 4, 11, 8, 10, 4, 8, 8, 9, 2};
+        assertThat(homework.task3(arr), is(res));
+    }
 }
