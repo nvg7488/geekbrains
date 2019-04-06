@@ -69,6 +69,11 @@ public class HomeWork2 {
         return result;
     }
 
+    /**
+     * Найти в одномерном массиве минимальное и максимальное значения.
+     * @param array
+     * @return min, max
+     */
     public int[] task5(int[] array) {
         int[] result = new int[2];
         result[0] = array[0];   //  min
