@@ -20,4 +20,17 @@ public class HomeWork2 {
         }
         return array;
     }
+
+    /**
+     * Задать пустой массив. С помощью цикла заполнить его значениями {0, 3, 6, 9, 12, 15, 18, 21}.
+     * @param max
+     * @return array
+     */
+    public int[] task2(int max) {
+        int[] result = new int[max];
+        for (int index = 0; index < max; index++) {
+            result[index] = index * 3;
+        }
+        return result;
+    }
 }
