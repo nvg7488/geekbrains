@@ -48,4 +48,24 @@ public class HomeWork2 {
         }
         return array;
     }
+
+    /**
+     * Создать квадратный двухмерный массив (количество строк = кол. столбцов),
+     * с помощью цикла (-ов) заполнить его диагональные элементы единицами.
+     * @param kol
+     * @return array
+     */
+    public int[][] task4(int kol) {
+        int[][] result = new int[kol][kol];
+        for (int x = 0; x < kol; x++) {
+            for (int y = 0; y < kol; y++) {
+                if (x == y) {
+                    result[x][y] = 1;
+                } else {
+                    result[x][y] = 0;
+                }
+            }
+        }
+        return result;
+    }
 }

@@ -26,4 +26,10 @@ public class TestHomeWork2 {
         int[] res = {2, 10, 6, 4, 11, 8, 10, 4, 8, 8, 9, 2};
         assertThat(homework.task3(arr), is(res));
     }
+    @Test
+    public void test4() {
+        HomeWork2 homework = new HomeWork2();
+        int[][] result = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
+        assertThat(homework.task4(3), is(result));
+    }
 }
