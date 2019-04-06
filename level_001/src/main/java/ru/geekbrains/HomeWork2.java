@@ -68,4 +68,19 @@ public class HomeWork2 {
         }
         return result;
     }
+
+    public int[] task5(int[] array) {
+        int[] result = new int[2];
+        result[0] = array[0];   //  min
+        result[1] = array[0];   //  max
+        for (int index = 0; index < array.length; index++) {
+            if (array[index] < result[0]) {
+                result[0] = array[index];
+            }
+            if (array[index] > result[1]) {
+                result[1] = array[index];
+            }
+        }
+        return result;
+    }
 }
