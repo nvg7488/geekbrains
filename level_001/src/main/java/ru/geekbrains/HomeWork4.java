@@ -78,9 +78,9 @@ public class HomeWork4 {
         } while (!xy(x, y));
         map [x][y] = 'X';
     }
-    private boolean xy(int x, int y) {
+    public boolean xy(int x, int y) {
         boolean result;
-        if (x < 0 || x > size || y < 0 || y > size)	{
+        if (x < 0 || x >= size || y < 0 || y >= size)	{
             result = false;
         } else if (map [x][y] == '*') {
             result = true;
