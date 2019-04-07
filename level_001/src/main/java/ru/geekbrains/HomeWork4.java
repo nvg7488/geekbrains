@@ -4,13 +4,13 @@ package ru.geekbrains;
  */
 import java.util.*;
 public class HomeWork4 {
-    private static int size = 5;
-    private static int dots = 4;
-    private static char[][] map = new char[size][size];
-    private static Scanner sc = new Scanner(System.in);
-    private static Random rand = new Random();
+    public int size = 5;
+    private int dots = 4;
+    public char[][] map = new char[size][size];
+    private Scanner sc = new Scanner(System.in);
+    private Random rand = new Random();
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         for (int x = 0; x < size; x++) {
             for (int y = 0; y < size; y++) {
                 map[x][y] = '*';
@@ -34,7 +34,7 @@ public class HomeWork4 {
         System.out.println("\n\tИгра завершена.");
     }
 
-    private static void printPole() {
+    public void printPole() {
         for (int i = 0; i <= size; i++) {
             System.out.print(i + " ");
         }
@@ -58,7 +58,7 @@ public class HomeWork4 {
             System.out.println("Играем ещё?.");
         }
     }
-    private static void stepRnd() {
+    private void stepRnd() {
         int x, y;
         do {
             x = rand.nextInt(size);
@@ -67,7 +67,7 @@ public class HomeWork4 {
         map [x][y] = 'O';
         System.out.println("Программа походила: " + (x + 1) + "x" + (y + 1));
     }
-    private static void stepMen() {
+    private void stepMen() {
         int x, y;
         do {
             System.out.println("\nХод игрока:");
@@ -78,7 +78,7 @@ public class HomeWork4 {
         } while (!xy(x, y));
         map [x][y] = 'X';
     }
-    private static boolean xy(int x, int y) {
+    private boolean xy(int x, int y) {
         boolean result;
         if (x < 0 || x > size || y < 0 || y > size)	{
             result = false;
@@ -89,7 +89,7 @@ public class HomeWork4 {
         }
         return result;
     }
-    private static boolean check(char ch) {
+    private boolean check(char ch) {
         boolean result = false;
         int x, y, z = size - dots;
         for (x = 0; x < 2; x++) {
@@ -126,7 +126,7 @@ public class HomeWork4 {
         }
         return result;
     }
-    private static boolean blnDots(int x, int y, int dx, int dy, char ch) {
+    private boolean blnDots(int x, int y, int dx, int dy, char ch) {
         int i, j, xd, yd;
         boolean bln = true;
         if (dx == 0) {
@@ -152,7 +152,7 @@ public class HomeWork4 {
         } while (i < xd);
         return bln;
     }
-    private static boolean dgnDots(int x, int y, int dx, char ch) {
+    private boolean dgnDots(int x, int y, int dx, char ch) {
         boolean result = true;
         int z = y + dots;
         for (; y < z; y++) {
