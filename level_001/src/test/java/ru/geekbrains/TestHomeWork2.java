@@ -49,4 +49,13 @@ public class TestHomeWork2 {
         int[] array3 = {1, 1, 3, 1, 4, 2};
         assertThat(homework.task6(array3), is(true));
     }
+    @Test
+    public void test7() {
+        HomeWork2 homework = new HomeWork2();
+        int[] array = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        int[] res1 = {8, 9, 1, 1, 5, 3, 2, 11, 4, 5, 2, 4};
+        assertThat(homework.task7(-3, array), is(res1));
+        int[] res2 = {9, 1, 1, 5, 3, 2, 11, 4, 5, 2, 4, 8};
+        assertThat(homework.task7(1, array), is(res2));
+    }
 }

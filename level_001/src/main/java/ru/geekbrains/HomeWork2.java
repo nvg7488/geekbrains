@@ -114,4 +114,32 @@ public class HomeWork2 {
         } while ((step < array.length) && !result);
         return result;
     }
+
+    /**
+     * Методу на вход подаётся одномерный массив и число n (м.б. положительным или отрицательным),
+     * при этом метод должен сместить все элементы массива на n позиций.
+     * @param n
+     * @param array
+     * @return array
+     */
+    public int[] task7(int n, int[] array) {
+        while (n != 0) {
+            if (n > 0) {
+                int step = array[0];
+                for (int index = 1; index <= array.length - 1; index++) {
+                    array[index - 1] = array[index];
+                }
+                array[array.length - 1] = step;
+                n--;
+            } else {
+                int step = array[array.length - 1];
+                for (int index = array.length - 1; index > 0; index--) {
+                    array[index] = array[index - 1];
+                }
+                array[0] = step;
+                n++;
+            }
+        }
+        return array;
+    }
 }
