@@ -47,4 +47,17 @@ public class HomeWork2 {
         }
         return result;
     }
+
+    public int task2c(int a, int b) {
+        int result = 1;
+        if (b == 1) {
+            result = a;
+        } else if (b % 2 > 0) {
+            result = a * task2c(a, b - 1);
+        } else {
+            result = task2c(a, b / 2);
+            result *= result;
+        }
+        return result;
+    }
 }

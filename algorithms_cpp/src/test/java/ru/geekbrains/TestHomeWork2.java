@@ -65,5 +65,8 @@ public class TestHomeWork2 {
 
         assertThat(homework.task2b(2, 2), is(4));
         assertThat(homework.task2b(3, 3), is(27));
+
+        assertThat(homework.task2c(2, 2), is(4));
+        assertThat(homework.task2c(3, 3), is(27));
     }
 }
