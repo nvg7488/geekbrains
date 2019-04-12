@@ -139,8 +139,10 @@ public class HomeWork4 {
         } else {
             yd = y + dots;
         }
-        i = x; do {
-            j = y; do {
+        i = x;
+        do {
+            j = y;
+            do {
                 if (map [x][y] != ch) {
                     bln = false;
                 }
@@ -152,7 +154,7 @@ public class HomeWork4 {
         } while (i < xd);
         return bln;
     }
-    private boolean dgnDots(int x, int y, int dx, char ch) {
+    public boolean dgnDots(int x, int y, int dx, char ch) {
         boolean result = true;
         int z = y + dots;
         for (; y < z; y++) {

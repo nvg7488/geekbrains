@@ -23,5 +23,29 @@ public class TestHomeWork4 {
         assertThat(homework.xy(1, 1), is(true));
         assertThat(homework.xy(1, 3), is(false));
         assertThat(homework.xy(1, -1), is(false));
+        homework.map = new char[][]{{'*', '*', '*'}, {'*', '!', '*'}, {'*', '*', '*'}};
+        assertThat(homework.xy(1, 1), is(false));
+    }
+    @Test
+    public void testDgn() {
+        HomeWork4 homework = new HomeWork4();
+        homework.size = 5;
+        homework.map = new char[][]{
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'}
+        };
+        for (int x = 0; x <= 1; x++) {
+            for (int y = 0; y <= 1; y++) {
+                assertThat(homework.dgnDots(x, y, 1, '*'), is(true));
+            }
+        }
+        for (int x = 3; x < 5; x++) {
+            for (int y = 0; y <= 1; y++) {
+                assertThat(homework.dgnDots(x, y, -1, '*'), is(true));
+            }
+        }
     }
 }
