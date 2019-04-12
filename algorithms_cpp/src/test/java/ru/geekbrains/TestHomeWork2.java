@@ -69,4 +69,11 @@ public class TestHomeWork2 {
         assertThat(homework.task2c(2, 2), is(4));
         assertThat(homework.task2c(3, 3), is(27));
     }
+
+    @Test
+    public void test3() {
+        HomeWork2 homework = new HomeWork2();
+        homework.task3b(3);
+        assertThat(homework.getKol(), is(18));
+    }
 }
