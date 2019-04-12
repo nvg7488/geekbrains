@@ -64,4 +64,50 @@ public class TestHomeWork4 {
         assertThat(homework.blnDots(0, 0, 0, 1, '*'), is(true));
         assertThat(homework.blnDots(0, 0, 0, 1, '!'), is(false));
     }
+    @Test
+    public void testCheck() {
+        HomeWork4 homework = new HomeWork4();
+        homework.size = 5;
+        homework.map = new char[][]{
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'}
+        };
+        assertThat(homework.check('*'), is(true));
+        assertThat(homework.check('!'), is(false));
+        homework.map = new char[][]{
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '!', '*', '*'},
+                {'*', '*', '!', '*', '*'},
+                {'*', '*', '!', '*', '*'},
+                {'*', '*', '!', '*', '*'}
+        };
+        assertThat(homework.check('!'), is(true));
+        homework.map = new char[][]{
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'!', '!', '!', '!', '*'},
+                {'*', '*', '*', '*', '*'}
+        };
+        assertThat(homework.check('!'), is(true));
+        homework.map = new char[][]{
+                {'*', '!', '*', '*', '*'},
+                {'*', '*', '!', '*', '*'},
+                {'*', '*', '*', '!', '*'},
+                {'*', '*', '*', '*', '!'},
+                {'*', '*', '*', '*', '*'}
+        };
+        assertThat(homework.check('!'), is(true));
+        homework.map = new char[][]{
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '!', '*'},
+                {'*', '*', '!', '*', '*'},
+                {'*', '!', '*', '*', '*'},
+                {'!', '*', '*', '*', '*'}
+        };
+        assertThat(homework.check('!'), is(true));
+    }
 }

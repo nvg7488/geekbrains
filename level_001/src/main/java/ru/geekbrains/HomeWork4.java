@@ -89,7 +89,7 @@ public class HomeWork4 {
         }
         return result;
     }
-    private boolean check(char ch) {
+    public boolean check(char ch) {
         boolean result = false;
         int x, y, z = size - dots;
         for (x = 0; x < 2; x++) {
