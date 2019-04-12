@@ -59,7 +59,11 @@ public class TestHomeWork2 {
     @Test
     public void testTask2() {
         HomeWork2 homework = new HomeWork2();
+
         assertThat(homework.task2a(2, 2), is(4));
         assertThat(homework.task2a(3, 3), is(27));
+
+        assertThat(homework.task2b(2, 2), is(4));
+        assertThat(homework.task2b(3, 3), is(27));
     }
 }

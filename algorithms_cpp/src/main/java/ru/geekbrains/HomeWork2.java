@@ -31,4 +31,20 @@ public class HomeWork2 {
         }
         return result;
     }
+
+    /**
+     * Реализовать функцию возведения числа a в степень b рекурсивно.
+     * @param a
+     * @param b
+     * @return a^b
+     */
+    public int task2b(int a, int b) {
+        int result;
+        if (b == 1) {
+            result = a;
+        } else {
+            result = a * task2b(a, b - 1);
+        }
+        return result;
+    }
 }
