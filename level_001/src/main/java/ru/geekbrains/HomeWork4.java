@@ -126,7 +126,7 @@ public class HomeWork4 {
         }
         return result;
     }
-    private boolean blnDots(int x, int y, int dx, int dy, char ch) {
+    public boolean blnDots(int x, int y, int dx, int dy, char ch) {
         int i, j, xd, yd;
         boolean bln = true;
         if (dx == 0) {

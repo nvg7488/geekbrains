@@ -49,4 +49,19 @@ public class TestHomeWork4 {
         }
         assertThat(homework.dgnDots(0, 0, 1, '!'), is(false));
     }
+    @Test
+    public void testBln() {
+        HomeWork4 homework = new HomeWork4();
+        homework.size = 5;
+        homework.map = new char[][]{
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'},
+                {'*', '*', '*', '*', '*'}
+        };
+        assertThat(homework.blnDots(0, 0, 1, 0, '*'), is(true));
+        assertThat(homework.blnDots(0, 0, 0, 1, '*'), is(true));
+        assertThat(homework.blnDots(0, 0, 0, 1, '!'), is(false));
+    }
 }
