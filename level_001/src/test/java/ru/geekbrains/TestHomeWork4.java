@@ -47,5 +47,6 @@ public class TestHomeWork4 {
                 assertThat(homework.dgnDots(x, y, -1, '*'), is(true));
             }
         }
+        assertThat(homework.dgnDots(0, 0, 1, '!'), is(false));
     }
 }
