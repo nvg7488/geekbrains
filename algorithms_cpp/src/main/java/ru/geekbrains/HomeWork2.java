@@ -17,4 +17,18 @@ public class HomeWork2 {
         }
         return binar;
     }
+
+    /**
+     * Реализовать функцию возведения числа a в степень b без рекурсии.
+     * @param a
+     * @param b
+     * @return a^b
+     */
+    public int task2a(int a, int b) {
+        int result = 1;
+        for (int index = 0; index < b; index++) {
+            result *= a;
+        }
+        return result;
+    }
 }

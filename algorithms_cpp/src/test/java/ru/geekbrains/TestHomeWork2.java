@@ -55,4 +55,11 @@ public class TestHomeWork2 {
         result.add(1);
         assertThat(homework.task1(5), is(result));
     }
+
+    @Test
+    public void testTask2() {
+        HomeWork2 homework = new HomeWork2();
+        assertThat(homework.task2a(2, 2), is(4));
+        assertThat(homework.task2a(3, 3), is(27));
+    }
 }
