@@ -3,8 +3,6 @@ package ru.geekbrains;
  * @author Николай Говорухин (govoruchin_nv@mail.ru)
  */
 import org.junit.Test;
-//import java.util.ArrayList;
-//import java.util.List;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 public class TestHomeWork6 {
@@ -26,5 +24,21 @@ public class TestHomeWork6 {
         assertThat(biest.hupfenBln(1.6f), is(true));
         assertThat(biest.hupfenBln(2.1f), is(false));
         assertThat(biest.schwimmenBln(0), is(false));
+    }
+    @Test
+    public void testHomeWork() {
+        HomeWork6 homework = new HomeWork6();
+
+        homework.rennen(600);
+        homework.rennen(350);
+        homework.rennen(100);
+
+        homework.hupfen(2.25f);
+        homework.hupfen(1.25f);
+        homework.hupfen(0.25f);
+
+        homework.schwimmen(15);
+        homework.schwimmen(5);
+        homework.schwimmen(-5);
     }
 }

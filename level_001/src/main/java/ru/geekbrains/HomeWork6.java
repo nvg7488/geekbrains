@@ -8,9 +8,9 @@ public class HomeWork6 {
 
     public void rennen(int num) {
         if (kater.rennenBln(num)) {
-            System.out.println("\tКот пробежит\n");
+            System.out.println("\tКот пробежит");
         } else {
-            System.out.println("\tКот не пробежит\n");
+            System.out.println("\tКот не пробежит");
         }
         if (hund.rennenBln(num)) {
             System.out.println("\tПёс пробежит\n");
@@ -19,11 +19,11 @@ public class HomeWork6 {
         }
     }
 
-    public void hupfen(int num) {
+    public void hupfen(float num) {
         if (kater.hupfenBln(num)) {
-            System.out.println("\tКот перепрыгнет\n");
+            System.out.println("\tКот перепрыгнет");
         } else {
-            System.out.println("\tКот не перепрыгнет\n");
+            System.out.println("\tКот не перепрыгнет");
         }
         if (hund.hupfenBln(num)) {
             System.out.println("\tПёс перепрыгнет\n");
@@ -34,9 +34,9 @@ public class HomeWork6 {
 
     public void schwimmen(int num) {
         if (kater.schwimmenBln(num)) {
-            System.out.println("\tКот проплывёт\n");
+            System.out.println("\tКот проплывёт");
         } else {
-            System.out.println("\tКот не проплывёт\n");
+            System.out.println("\tКот не проплывёт");
         }
         if (hund.schwimmenBln(num)) {
             System.out.println("\tПёс проплывёт\n");
