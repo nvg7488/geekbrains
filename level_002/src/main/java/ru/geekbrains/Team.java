@@ -20,17 +20,6 @@ public class Team {
             unit[i] -= pause;
         }
     }
-
-//    public void result() {
-//        int n;
-//        System.out.println("Прошли полосу:");
-//        for (int i = 0; i < 4; i++) {
-//            if (unit[i] > 0) {
-//                System.out.println("\t" + i + "-й");
-//            }
-//        }
-//    }
-
     public int[] getUnit() {
         return unit;
     }

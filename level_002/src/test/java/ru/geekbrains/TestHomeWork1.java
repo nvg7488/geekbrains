@@ -26,4 +26,18 @@ public class TestHomeWork1 {
         }
         assertThat(team.getUnit(), is(unit));
     }
+
+    @Test
+    public void testCourse() {
+        Team team = new Team("Команда");
+        Course course = new Course();
+        course.start(team);
+        int[] unit = team.getUnit();
+        for (int i = 0; i < 4; i++) {
+            if (unit[i] > 0) {
+                System.out.println("\t" + i + "-й");
+            }
+        }
+        assertThat(team.getUnit(), is(unit));
+    }
 }
