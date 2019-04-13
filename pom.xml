@@ -15,6 +15,7 @@
 
     <modules>
         <module>level_001</module>
+        <module>level_002</module>
         <module>algorithms_cpp</module>
     </modules>
 
