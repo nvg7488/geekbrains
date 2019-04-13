@@ -13,4 +13,16 @@ public class TestHomeWork7 {
         plate.incFood(7);
         assertThat(plate.getFood(), is(16));
     }
+    @Test
+    public void testGesattigt() {
+        HomeWork7 homework = new HomeWork7();
+        homework.init();
+        assertThat(homework.gesattigt(), is(6));
+    }
+    @Test
+    public void testHungrig() {
+        HomeWork7 homework = new HomeWork7();
+        homework.init();
+        assertThat(homework.hungrig(), is(3));
+    }
 }

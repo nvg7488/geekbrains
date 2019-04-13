@@ -17,12 +17,6 @@ public class HomeWork7 {
                 ++full;
             }
         }
-//        plate.info();
-//        System.out.println("Сытых котов: " + full);
-//        kol -= full;
-//        System.out.println("Голодных котов: " + kol);
-//        plate.incFood(36);
-//        plate.info();
     }
 
     public int gesattigt() {    //  sätt
