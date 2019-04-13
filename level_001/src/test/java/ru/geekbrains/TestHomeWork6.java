@@ -10,15 +10,21 @@ import static org.junit.Assert.assertThat;
 public class TestHomeWork6 {
     @Test
     public void testHund() {
-        Hund hund = new Hund();
-//        this.rennen = 500;
-//        this.hupfen = 0.5f;
-//        this.schwimmen = 10;
-        assertThat(hund.rennenBln(300), is(true));
-        assertThat(hund.rennenBln(700), is(false));
-        assertThat(hund.hupfenBln(0.3f), is(true));
-        assertThat(hund.hupfenBln(0.7f), is(false));
-        assertThat(hund.schwimmenBln(9), is(true));
-        assertThat(hund.schwimmenBln(11), is(false));
+        Hund biest = new Hund();
+        assertThat(biest.rennenBln(300), is(true));
+        assertThat(biest.rennenBln(700), is(false));
+        assertThat(biest.hupfenBln(0.3f), is(true));
+        assertThat(biest.hupfenBln(0.7f), is(false));
+        assertThat(biest.schwimmenBln(9), is(true));
+        assertThat(biest.schwimmenBln(11), is(false));
+    }
+    @Test
+    public void testKater() {
+        Kater biest = new Kater();
+        assertThat(biest.rennenBln(150), is(true));
+        assertThat(biest.rennenBln(250), is(false));
+        assertThat(biest.hupfenBln(1.6f), is(true));
+        assertThat(biest.hupfenBln(2.1f), is(false));
+        assertThat(biest.schwimmenBln(0), is(false));
     }
 }
