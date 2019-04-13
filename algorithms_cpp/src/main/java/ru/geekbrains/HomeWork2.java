@@ -73,15 +73,15 @@ public class HomeWork2 {
      * Определить, сколько имеется вариантов преобразования с использованием рекурсии.
      * @param num
      */
-    public void task3b(int num) {
+    public void task3(int num) {
         if (num == 20) {
             kol++;
         } else {
             if (num < 20) {
-                task3b(num + 1);
+                task3(num + 1);
             }
             if (num < 11) {
-                task3b(num * 2);
+                task3(num * 2);
             }
         }
     }

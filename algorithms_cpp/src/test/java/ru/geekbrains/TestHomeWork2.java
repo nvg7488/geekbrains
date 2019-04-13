@@ -73,7 +73,7 @@ public class TestHomeWork2 {
     @Test
     public void test3() {
         HomeWork2 homework = new HomeWork2();
-        homework.task3b(3);
+        homework.task3(3);
         assertThat(homework.getKol(), is(18));
     }
 }
